@@ -82,3 +82,8 @@ body, html {
         margin-left: 38%;
     }
 }
+@media (max-width: 450px){
+    .platforms-available{
+        margin-left: 34%;
+    }
+}
