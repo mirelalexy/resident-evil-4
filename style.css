@@ -35,8 +35,50 @@ body, html {
     margin-top: 200px;
 }
 #available-now{
-    color: #BE1829;
-    padding-left: 16px;
-    padding-top: 0px;
-    margin-bottom: 30px;
+    color: #BE1829 !important;
+    font-size: 2rem;
+}
+#logo{
+    max-width: 100%;
+    height: 100%;
+}
+.platforms{
+    width: 120px;
+    height: 60px;
+}
+@media (min-width: 992px){
+    .platforms-available{
+        margin-left: 0.5em;
+    }
+    #available-now{
+        margin-left: 0.5em;  
+    }
+}
+@media (max-width: 576px){
+    #available-now{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.5px){
+    .platforms-available{
+        margin-left: 8%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.5px){
+    .platforms{
+        width: 100px;
+        height: 50px;
+    }
+    .platforms-available{
+        margin-left: 2%;
+    }
+}
+@media (max-width: 576px){
+    .platforms{
+        width: 100px;
+        height: 50px;
+    }
+    .platforms-available{
+        margin-left: 38%;
+    }
 }
