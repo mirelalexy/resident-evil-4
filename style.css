@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Night-Stalker;
+    src: url(assets/night-stalker.ttf);
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -36,7 +41,9 @@ body, html {
 }
 #available-now{
     color: #BE1829 !important;
-    font-size: 2rem;
+    font-size: 3.4rem;
+    font-family: Night-Stalker;
+    margin-bottom: 0px;
 }
 #logo{
     max-width: 100%;
@@ -51,12 +58,12 @@ body, html {
         margin-left: 0.5em;
     }
     #available-now{
-        margin-left: 0.5em;  
+        margin-left: 0.38em;  
     }
 }
 @media (max-width: 576px){
     #available-now{
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 }
 @media (min-width: 768px) and (max-width: 991.5px){
