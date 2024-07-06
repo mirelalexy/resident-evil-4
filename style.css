@@ -34,7 +34,6 @@ body, html {
 .navbar-text{
     font-size: 1.2rem !important;
     color: white !important;
-    padding-left: 20px;
 }
 .game-information{
     margin-top: 200px;
@@ -92,5 +91,10 @@ body, html {
 @media (max-width: 450px){
     .platforms-available{
         margin-left: 34%;
+    }
+}
+@media (min-width: 450px) and (max-width: 575.5px){
+    .platforms-available{
+        margin-left: 36%;
     }
 }

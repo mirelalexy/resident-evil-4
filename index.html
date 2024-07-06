@@ -17,12 +17,27 @@
             </video>
             
             <!-- navigation bar -->
-            <nav class="navbar fixed-top bg-transparent mt-3">
-                <div class="container-fluid justify-content-end">
-                  <a class="navbar-brand navbar-text" href="#">HOME</a>
-                  <a class="navbar-brand navbar-text" href="#">ABOUT</a>
-                  <a class="navbar-brand navbar-text" href="#">TRAILERS</a>
-                  <a class="text-sm-center nav-link active bg-danger buy-btn navbar-text py-2 px-3" aria-current="page" href="#">BUY</a>
+            <nav class="navbar fixed-top navbar-expand-md bg-transparent mt-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text mx-3" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text mx-3" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text mx-3" href="#">TRAILERS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item d-none d-md-block">
+                        <a class="btn btn-danger mx-3" href="#" role="button">BUY</a>
+                    </div>
                 </div>
             </nav>
 
@@ -51,6 +66,11 @@
                         </div>
                         <div class="col-sm-auto col-xs-6">
                             <img src="assets/steam-icon.svg" class="platforms">
+                        </div>
+                    </div>
+                    <div class="row d-block d-md-none">
+                        <div class="col-auto text-center">
+                            <a class="btn btn-danger mt-2" href="#" role="button">BUY</a>
                         </div>
                     </div>
                 </div>
