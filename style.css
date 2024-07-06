@@ -26,14 +26,16 @@ body, html {
     z-index: -1;
     transform: translate(-50%, -50%);
 }
-.buy-btn{
-   border-radius: 10%;
-   margin-left: 20px;
-   margin-right: 20px;
+.buy-btn-text{
+    font-family: fantasy;
 }
 .navbar-text{
     font-size: 1.2rem !important;
     color: white !important;
+    font-family: fantasy;
+}
+.navbar-text:hover{
+    color: #BE1829 !important;
 }
 .game-information{
     margin-top: 200px;
@@ -76,7 +78,7 @@ body, html {
         height: 50px;
     }
     .platforms-available{
-        margin-left: 2%;
+        margin-left: 4%;
     }
 }
 @media (max-width: 576px){
