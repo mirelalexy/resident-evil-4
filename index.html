@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resident Evil | CAPCOM</title>
-    <link rel = "icon" type = "image/png" href = "assets/capcom-logo.png">
+    <link rel = "icon" type = "image/png" href = "assets/images/capcom-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- video background applied to the whole page -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/videos/resident-evil-homepage-video.mp4" type="video/mp4">
+        </video>
+    </div>
 
+    <!-- website content -->
+    <div class="content">
     <!-- home -->
-    <section id="video">
+    <section id="home">
         <div class="container-fluid p-0">
-            <!-- background video -->
-            <video autoplay muted loop>
-                <source src="assets/resident-evil-homepage-video.mp4" type="video/mp4">
-            </video>
-            
             <!-- navigation bar -->
             <nav class="navbar fixed-top navbar-expand-md bg-transparent mt-3">
                 <div class="container-fluid">
@@ -27,13 +30,19 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link navbar-text mx-3" href="#">HOME</a>
+                                <a class="nav-link navbar-text mx-3" href="#home">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link navbar-text mx-3" href="#">ABOUT</a>
+                                <a class="nav-link navbar-text mx-3" href="#about">ABOUT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link navbar-text mx-3" href="#">TRAILERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text mx-3" href="#">DEMO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text mx-3" href="#">DLC</a>
                             </li>
                         </ul>
                     </div>
@@ -48,7 +57,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-xs-12 col-s-12">
-                            <img src="assets/re4r-logo.png" id="logo">
+                            <img src="assets/images/re4r-logo.png" id="logo">
                         </div>
                     </div>
                     <div class="row">
@@ -58,16 +67,16 @@
                     </div>
                     <div class="row mt-1 platforms-available">
                         <div class="col-sm-auto">
-                            <img src="assets/ps5-logo.svg" class="platforms">
+                            <img src="assets/images/ps5-logo.svg" class="platforms">
                         </div>
                         <div class="col-sm-auto col-xs-6">
-                            <img src="assets/ps4-logo.svg" class="platforms">
+                            <img src="assets/images/ps4-logo.svg" class="platforms">
                         </div>
                         <div class="col-sm-auto col-xs-6">
-                            <img src="assets/xboxxs-icon.svg" class="platforms">
+                            <img src="assets/images/xboxxs-icon.svg" class="platforms">
                         </div>
                         <div class="col-sm-auto col-xs-6">
-                            <img src="assets/steam-icon.svg" class="platforms">
+                            <img src="assets/images/steam-icon.svg" class="platforms">
                         </div>
                     </div>
                     <div class="row d-block d-md-none">
@@ -80,17 +89,105 @@
         </div>
     </section>
 
+    <!-- DLC's -->
+    <section id="game-extra-content">
+        <div class="container-xxl contentspace py-3">
+            <div class="d-flex justify-content-end">
+                <span class="downloadable-content">DOWNLOADABLE CONTENT</span>
+                <div class="d-flex">
+                    <a href="#" class="col-lg-4 p-4">
+                        <img class="dlc" src="assets/images/separate-ways-dlc.png">
+                    </a>
+                    <a href="#" class="col-lg-4 p-4">
+                        <img class="dlc" src="assets/images/mercenaries-dlc.png">
+                    </a>
+                    <a href="#" class="col-lg-4 p-4">
+                        <img class="dlc" src="assets/images/resident-evil-4-vr.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- demo -->
+    <section id="demo">
+        <div class="container-xxlcontentspace mt-3">
+            <div class="container">
+            <div class="row align-items-center demo-available">
+                <div class="col-lg-3">
+                    <img id="demoimg" src="assets/images/re-demo.png">
+                </div>
+                <div class="col-lg-3">
+                    <p class="subtitles2">Demo available now!</p>
+                    <p class="subtitles3 pagetext">No time limit, no play limit.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- trailers -->
+    <section id="trailers">
+        <div class="container-xxl contentspace">
+            <!--<div id="aboutimg">
+                <img src="assets/images/resident-evil-4-about.jpg">
+            </div>-->
+                <div class="container">
+                <div class="row">
+                    <h2 class="subtitles col-lg-1">ABOUT</h2>
+                </div>
+                <div class="row">
+                    <h4 class="quotes col-lg-4">Survival is just the beginning</h4>
+                </div>
+                <br><br>
+                <div class="row">
+                    <p class="pagetext col-lg-5">Resident Evil 4 is a remake of the 2005 original Resident Evil 4.</p>
+                </div>
+                <div class="row">
+                    <p class="pagetext boldtext col-lg-6">Reimagined for 2023 to bring state-of-the-art survival horror.</p>
+                </div>
+                <div class="row">
+                    <p class="pagetext col-lg-6">Resident Evil 4 preserves the essence of the original game, while introducing modernized gameplay,
+                        a reimagined storyline, and vividly detailed graphics to make this the latest survival horror game
+                        where life and death, terror and catharsis intersect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- about -->
-     <section id="about">
+    <section id="about">
+        <div class="container-xxl contentspace">
+            <!--<div id="aboutimg">
+                <img src="assets/images/resident-evil-4-about.jpg">
+            </div>-->
+                <div class="container">
+                <div class="row">
+                    <h2 class="subtitles col-lg-1">ABOUT</h2>
+                </div>
+                <div class="row">
+                    <h4 class="quotes col-lg-4">Survival is just the beginning</h4>
+                </div>
+                <br><br>
+                <div class="row">
+                    <p class="pagetext col-lg-5">Resident Evil 4 is a remake of the 2005 original Resident Evil 4.</p>
+                </div>
+                <div class="row">
+                    <p class="pagetext boldtext col-lg-6">Reimagined for 2023 to bring state-of-the-art survival horror.</p>
+                </div>
+                <div class="row">
+                    <p class="pagetext col-lg-6">Resident Evil 4 preserves the essence of the original game, while introducing modernized gameplay,
+                        a reimagined storyline, and vividly detailed graphics to make this the latest survival horror game
+                        where life and death, terror and catharsis intersect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-     </section>
-
-     <!-- trailers -->
-     <section id="trailers">
-
-     </section>
 
 
+    
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

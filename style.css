@@ -1,21 +1,34 @@
-@font-face {
+@font-face{
     font-family: Night-Stalker;
-    src: url(assets/night-stalker.ttf);
+    src: url(assets/fonts/night-stalker.ttf);
 }
-
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+@font-face{
+    font-family: Bona-Nova;
+    src: url(assets/fonts/BonaNovaSC-Regular.ttf);
+}
+@font-face{
+    font-family: Bona-Nova-Bold;
+    src: url(assets/fonts/BonaNovaSC-Bold.ttf);
+}
+@font-face{
+    font-family: Bona-Nova-Italic;
+    src: url(assets/fonts/BonaNovaSC-Italic.ttf);
+}
+html, body{
     height: 100%;
-}
-#video {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    margin: 0;
     overflow: hidden;
 }
-#video video {
+.video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+#background-video{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,13 +39,21 @@ body, html {
     z-index: -1;
     transform: translate(-50%, -50%);
 }
+.content{
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 .buy-btn-text{
-    font-family: fantasy;
+    font-family: Bona-Nova;
 }
 .navbar-text{
     font-size: 1.2rem !important;
     color: white !important;
-    font-family: fantasy;
+    font-family: Bona-Nova;
 }
 .navbar-text:hover{
     color: #BE1829 !important;
@@ -53,6 +74,63 @@ body, html {
 .platforms{
     width: 120px;
     height: 60px;
+}
+.subtitles{
+    font-family: Bona-Nova-Bold;
+    color: #BE1829;
+}
+.quotes{
+    font-family: Bona-Nova-Italic;
+    color: #BE1829;
+    font-size: 3rem;
+}
+.contentspace{
+    margin-top: 17%;
+}
+.pagetext{
+    font-family: serif;
+    color: white;
+}
+.boldtext{
+    font-family: Bona-Nova-Bold;
+}
+#aboutimg{
+    z-index: -1;
+    position: absolute;
+    margin-bottom: 45%;
+}
+.dlc{
+    width: 370px;
+    height: 250px;
+}
+.dlc:hover{
+    filter: brightness(1.2);
+}
+.downloadable-content{
+    font-family: Bona-Nova-Bold;
+    color: #BE1829;
+    font-size: 1.2rem;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    padding-top: 0.5%;
+}
+.subtitles2{
+    color: #BE1829;
+    font-size: 3.4rem;
+    font-family: Night-Stalker;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+.subtitles3{
+    color: white;
+    white-space: nowrap;
+}
+#demoimg{
+    width: 300px;
+    height: auto;
+}
+.demo-available{
+    margin-left: 1.5%;
 }
 @media (min-width: 992px){
     .platforms-available{
